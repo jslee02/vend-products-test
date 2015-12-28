@@ -1,0 +1,15 @@
+package:
+  name: dart
+  version: "5.1.1"
+
+source:
+  url: https://github.com/dartsim/dart/archive/v5.1.1.tar.gz
+
+requirements:
+  build:
+    - cmake
+
+about:
+  homepage:  http://dartsim.github.io
+  license: BSD
+
