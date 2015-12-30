@@ -6,6 +6,20 @@ source:
   url: http://libccd.danfis.cz/files/libccd-2.0.tar.gz
   sha256: 513e212fbb22cf720cf16ba911e8a8ccb1050c006789631ff2474ecc2f12b47a
 
+build:
+  unix:
+    - mkdir build
+    - cd build
+    - cmake ..
+    - cmake --build .
+    - ctest
+  windows:
+    - md build
+    - cd build
+    - cmake ..
+    - cmake --build .
+    - ctest
+
 requirements:
   build:
     - cmake
