@@ -15,10 +15,9 @@ build:
     build_system: cmake
     script:
       - mkdir build
-      - cd build
-      - cmake .. %{cmake.options}
-      - cmake --build . %{cmake.build_config}
-      - ctest
+      - cd build; cmake .. %{cmake.options}
+      - cd build; cmake --build . %{cmake.build_config}
+      # - ctest
   windows:
     script:
       - md build
