@@ -8,6 +8,7 @@ source:
 requirements:
   build:
     - cmake
+    - cmake
 
 about:
   homepage:  http://dartsim.github.io
