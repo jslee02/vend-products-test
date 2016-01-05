@@ -1,6 +1,6 @@
 package:
   name: dart
-  version: "5.1.1"
+  version: 5.1.1
 
 source:
   url: https://github.com/dartsim/dart/archive/v5.1.1.tar.gz
