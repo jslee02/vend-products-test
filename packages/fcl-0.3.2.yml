@@ -3,7 +3,7 @@ package:
   version: "0.3.2"
 
 source:
-  url: https://github.com/flexible-collision-library/fcl/archive/0.3.2.tar.gz
+  url: https://github.com/flexible-collision-library/fcl/archive/master.zip
   sha256: cf914f85b32cf8b63879907726df64e50da33f00d538759d789fe10fc5fbc95b
 
 requirements:
