@@ -14,12 +14,12 @@ build:
   unix:
     build_system: bootstrap
     script:
-      - ./bootstrap.sh %{bootstrap.build_config}
+      - ./bootstrap.sh %{bootstrap.options}
       - ./b2 install
   windows:
     build_system: bootstrap
     script:
-      - ./bootstrap.sh %{bootstrap.build_config}
+      - ./bootstrap.sh %{bootstrap.options}
       - ./b2 install
 
 about:
