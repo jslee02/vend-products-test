@@ -19,7 +19,7 @@ build:
   windows:
     build_system: bootstrap
     script:
-      - bootstrap %{bootstrap.options}
+      - bootstrap vc12 %{bootstrap.options}
       - .\b2 install
 
 about:
