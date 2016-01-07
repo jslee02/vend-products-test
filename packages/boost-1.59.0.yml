@@ -20,7 +20,7 @@ build:
     build_system: bootstrap
     script:
       - bootstrap vc12 %{bootstrap.options}
-      - .\b2 install
+      - .\b2 install %{bootstrap.options}
 
 about:
   homepage: http://www.boost.org
