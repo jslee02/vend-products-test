@@ -18,17 +18,13 @@ build:
       - cd build & cmake .. %{cmake.options}
       - cd build & cmake --build . %{cmake.build_config}
       - cd build & make install
-      # - cmake . %{cmake.options}
-      # - cmake --build . %{cmake.build_config}
-      # - make install
       # - ctest
   windows:
     script:
       - md build
-      - cd build
-      - cmake ..
-      - cmake --build .
-      - ctest
+      - cd build & cmake .. %{cmake.options}
+      - cd build & cmake --build . %{cmake.build_config}
+      # - ctest
 
 about:
   homepage: http://libccd.danfis.cz
