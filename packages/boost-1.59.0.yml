@@ -19,8 +19,8 @@ build:
   windows:
     build_system: bootstrap
     script:
-      - ./bootstrap.sh %{bootstrap.options}
-      - ./b2 install
+      - bootstrap %{bootstrap.options}
+      - .\b2 install
 
 about:
   homepage: http://www.boost.org
