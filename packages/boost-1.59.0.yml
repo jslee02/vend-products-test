@@ -12,21 +12,15 @@ requirements:
 
 build:
   unix:
-    build_system: cmake
+    build_system: bootstrap
     script:
-      - mkdir build
-      - cd build; cmake .. %{cmake.options}
-      - cd build; cmake --build . %{cmake.build_config}
-      - cd build; make install
-      # - ctest
+      - ./bootstrap.sh %{bootstrap.build_config}
+      - ./b2 install
   windows:
-    build_system: cmake
+    build_system: bootstrap
     script:
-      - mkdir build
-      - cd build & cmake .. %{cmake.options}
-      - cd build & cmake --build . %{cmake.build_config}
-      - cd build & make install
-      # - ctest
+      - ./bootstrap.sh %{bootstrap.build_config}
+      - ./b2 install
 
 about:
   homepage: http://www.boost.org
