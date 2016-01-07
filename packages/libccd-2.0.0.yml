@@ -14,13 +14,13 @@ build:
   unix:
     build_system: cmake
     script:
-      # - mkdir build
-      # - cd build & cmake .. %{cmake.options}
-      # - cd build & cmake --build . %{cmake.build_config}
-      # - cd build & make install
-      - cmake . %{cmake.options}
-      - cmake --build . %{cmake.build_config}
-      - make install
+      - mkdir build
+      - cd build & cmake .. %{cmake.options}
+      - cd build & cmake --build . %{cmake.build_config}
+      - cd build & make install
+      # - cmake . %{cmake.options}
+      # - cmake --build . %{cmake.build_config}
+      # - make install
       # - ctest
   windows:
     script:
