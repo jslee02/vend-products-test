@@ -17,8 +17,15 @@ build:
       - mkdir build
       - cd build; cmake .. %{cmake.options}
       - cd build; cmake --build . %{cmake.build_config}
-      - cd build; make install
+      - cd build; cmake --build . --target install
       # - ctest
+  windows:
+    build_system: cmake
+    script:
+      - mkdir build
+      - cd build; cmake .. %{cmake.options}
+      - cd build; cmake --build . %{cmake.build_config}
+      - cd build; cmake --build . --target install
 
 about:
   homepage: https://github.com/flexible-collision-library/fcl.git
