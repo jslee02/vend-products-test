@@ -24,6 +24,7 @@ build:
       - md build
       - cd build & cmake .. %{cmake.options}
       - cd build & cmake --build . %{cmake.build_config}
+      - cd build & cmake --build . --target install %{cmake.build_config}
       # - ctest
 
 about:
